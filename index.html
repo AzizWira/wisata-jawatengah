@@ -13,6 +13,7 @@
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <link href="css/flexslider.css" rel="stylesheet" />
     <link href="css/witeng-style.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
     <!-- Latest compiled and minified CSS -->
     <link
@@ -22,30 +23,19 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="tm-gray-bg">
+  <body class="tm-gray-bg example">
     <!-- Header -->
-    <div class="tm-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-4 col-sm-3 tm-site-name-container">
-            <a href="#" class="tm-site-name">WiTeng</a>
-          </div>
-          <div class="col-lg-6 col-md-8 col-sm-9">
-            <div class="mobile-menu-icon">
-              <i class="fa fa-bars"></i>
-            </div>
-            <nav class="tm-nav">
-              <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Our Tours</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
+
+    <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
+    <label for="menu-icon"></label>
+    <nav class="nav">
+      <ul class="pt-5">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Wisata</a></li>
+        <li><a href="#">Testimoni</a></li>
+        <li><a href="#">Lokasi</a></li>
+      </ul>
+    </nav>
 
     <!-- Banner -->
     <section class="tm-banner">
@@ -132,6 +122,67 @@
         </div>
       </div>
     </section>
+    <div class="testimonial">
+      <h1 class="tittle-testimonial">Testimonial Masyarakat</h1>
+      <!-- start foreach -->
+    <figure class="snip1533">
+      <figcaption>
+        <blockquote>
+          <p>Dengan Adanya Website Ini Saya Menjadi Jauh Terbantu Karena Saya Lebih Mudah Menemukan Tempat Wisata</p>
+        </blockquote>
+        <h3>M Zumar Ramadhan</h3>
+        <h4>Warga Jateng</h4>
+      </figcaption>
+    </figure>
+    <!-- end -->
+    </div>
+    <div class="con-contact" id="contact">
+      <h1 class="tittle-contact">Berikan Testimoni</h1>
+          <div class="container-contact">
+          <div class="screen-contact">
+            <div class="screen-header-contact">
+              <div class="screen-header-left-contact">
+                <div class="screen-header-button-contact close"></div>
+                <div class="screen-header-button-contact maximize"></div>
+                <div class="screen-header-button-contact minimize"></div>
+              </div>
+              <div class="screen-header-right-contact">
+                <div class="screen-header-ellipsis-contact"></div>
+                <div class="screen-header-ellipsis-contact"></div>
+                <div class="screen-header-ellipsis-contact"></div>
+              </div>
+            </div>
+            <div class="screen-body-contact">
+              <div class="screen-body-item-contact left">
+                <div class="app-title-contact">
+                  <span>Kirim</span>
+                  <span>Komentar</span>
+                </div>
+                <div class="app-contact-contact">CONTACT INFO : +6280000000000</div>
+              </div>
+              <!-- ini form -->
+                <form class="screen-body-item-contact" id="form-testi">
+                  <div class="app-form-contact">
+                    <div class="app-form-group-contact">
+                      <input class="app-form-control-contact" placeholder="Nama Pengirim">
+                    </div>
+                    <div class="app-form-group-contact">
+                      <input class="app-form-control-contact" placeholder="Asal Pengirim">
+                    </div>
+                    <div class="app-form-group-contact">
+                      <input class="app-form-control-contact" placeholder="Pesan">
+                    </div>
+                    <div class="app-form-group buttons-contact">
+                      <button class="app-form-button-contact" id="cancel-testimonial">CANCEL</button>
+                      <button class="app-form-button-contact" type="submit">SEND</button>
+                    </div>
+                  </div>
+                </form>
+              <!-- end form -->
+            </div>
+          </div>
+        </div>
+      </div>
     <footer class="tm-black-bg">
       <div class="container">
         <div class="row">
@@ -141,6 +192,12 @@
         </div>
       </div>
     </footer>
+
+    <div class="cursor"></div>
+    <div class="cursorInner"></div>
+    <!-- progress-bar and btn to top -->
+    <div class="progresss-bar">
+    </div>
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
     <!-- jQuery -->
     <script type="text/javascript" src="js/moment.js"></script>
