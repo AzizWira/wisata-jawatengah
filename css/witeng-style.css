@@ -1,3 +1,11 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
 /* CSS Resets */
 ul, p {
 	margin: 0;
@@ -507,7 +515,7 @@ hr {
 }
 
 .tm-home-box-3-info {
-	height: 225px;
+	height: auto;
 	max-width: 305px;
 	float: right;
 	border: 1px solid #CCC;
@@ -515,7 +523,11 @@ hr {
 }
 
 .tm-home-box-3-description {
-	padding: 40px 30px 44px;
+	padding: 20px 30px 24px;
+	max-height: 150px;
+	overflow: hidden;
+	/* text-overflow: ellipsis ; */
+	margin: 0;
 }
 
 .section-padding-bottom {
@@ -1267,8 +1279,8 @@ hr {
 	}
 
 	.tm-home-box-3-description {
-		padding-top: 30px;
-		padding-bottom: 34px;
+		padding-top: 10px;
+		padding-bottom: 14px;
 	}
 
 	.tm-home-box-3 {
